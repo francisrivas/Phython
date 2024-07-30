@@ -39,8 +39,7 @@ class ContactsAndroidTests(unittest.TestCase):
         self.driver.find_element_by_accessibility_id("Save").click()
 
         # for some reason "save" breaks things
-        alert = self.driver.switch_to_alert()
-
+        
         # no way to handle alerts in Android
         self.driver.find_element_by_android_uiautomator('new UiSelector().clickable(true)').click()
 
